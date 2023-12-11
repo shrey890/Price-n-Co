@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="./assets/css/style.css" />
-		<link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+		<!-- <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" /> -->
 		<!-- <link rel="stylesheet" href="./assets/css/docs.theme.min.css" /> -->
 		<!-- !manifest -->
 		<link
@@ -59,132 +59,143 @@
 
 	<body>
 		<header>
-			<div class="text-center alert alert-dismissible text-white primary">
+			<div class="text-center text-white primary">
 				20% Off! Code: SPRING23 - Terms apply*
 			</div>
 		</header>
 		<!-- !nav -->
-		<nav class="navbar container navbar-expand-lg bg-body-tertiary banner-nav">
-			<main class="d-flex justify-content-between w-100">
-				<div>
-					<a class="navbar-brand" href="#">
-						<img src="./assets/img/logo.svg" alt="logo" />
-					</a>
-				</div>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"
-						><img src="./assets/img/icons/Menu.svg" alt=""
-					/></span>
-					<span id="closeIcon" style="display: none">&#x2716; ></span>
-				</button>
-				<div
-					class="d-flex search-border justify-content-center search-container"
-					id="searchContainer"
-				>
-					<img src="./assets/img/icons/Search.svg" alt="" class="ms-2" />
-					<input
-						type="search"
-						placeholder="Search products, articles, faq, ..."
-						class="search-input"
-					/>
-					<img
-						src="./assets/img/icons/mic.svg"
-						alt=""
-						class="me-3"
-						width="24px"
-					/>
-					<img
-						src="./assets/img/icons/Camera.svg"
-						alt=""
-						class="me-2"
-						width="24px"
-					/>
-				</div>
-				<div class="d-flex align-items-baseline">
-					<div class="navbar-text me-3">
-						<a href="#"
-							><img src="./assets/img/icons/find-a-store.svg" alt="" />Find a
-							Store</a
-						>
-					</div>
-
+		<main class="banner img-fluid">
+			<nav
+				class="navbar container navbar-expand-lg bg-body-tertiary banner-nav"
+			>
+				<main class="d-flex justify-content-between w-100">
 					<div>
-						<span class="navbar-text"
-							><a href="#"
-								><img src="./assets/img/icons/support.svg" alt="" />Support</a
-							></span
-						>
+						<a class="navbar-brand" href="#">
+							<img src="./assets/img/logo.svg" alt="logo" />
+						</a>
 					</div>
-					<div class="ms-5">
-						<img class="ms-2" src="./assets/img/icons/Favorite.svg" alt="fav" />
-						<img class="ms-2" src="./assets/img/icons/Account.svg" alt="acc" />
-						<img class="ms-2" src="./assets/img/icons/Cart.svg" alt="cart" />
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"
+							><img src="./assets/img/icons/Menu.svg" alt=""
+						/></span>
+						<span id="closeIcon" style="display: none">&#x2716; ></span>
+					</button>
+					<div
+						class="d-flex search-border justify-content-center search-container"
+						id="searchContainer"
+					>
+						<img src="./assets/img/icons/Search.svg" alt="" class="ms-2" />
+						<input
+							type="search"
+							placeholder="Search products, articles, faq, ..."
+							class="search-input"
+						/>
+						<img
+							src="./assets/img/icons/mic.svg"
+							alt=""
+							class="me-3"
+							width="24px"
+						/>
+						<img
+							src="./assets/img/icons/Camera.svg"
+							alt=""
+							class="me-2"
+							width="24px"
+						/>
 					</div>
-				</div>
-			</main>
-		</nav>
-		<section>
-			<hr />
-			<nav class="navbar navbar-expand-lg bg-body-tertiary banner-nav">
-				<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<div class="d-flex align-items-baseline">
+						<div class="navbar-text me-3">
+							<a href="#"
+								><img src="./assets/img/icons/find-a-store.svg" alt="" />Find a
+								Store</a
+							>
+						</div>
+
+						<div>
+							<span class="navbar-text"
+								><a href="#"
+									><img src="./assets/img/icons/support.svg" alt="" />Support</a
+								></span
+							>
+						</div>
+						<div class="ms-5">
+							<img
+								class="ms-2"
+								src="./assets/img/icons/Favorite.svg"
+								alt="fav"
+							/>
+							<img
+								class="ms-2"
+								src="./assets/img/icons/Account.svg"
+								alt="acc"
+							/>
+							<img class="ms-2" src="./assets/img/icons/Cart.svg" alt="cart" />
+						</div>
+					</div>
+				</main>
+			</nav>
+			<section>
+				<hr />
+				<nav class="navbar navbar-expand-lg bg-body-tertiary banner-nav">
+					<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon"></span>
 	</button> -->
-				<div class="collapse container navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a
-								class="nav-link active fw-bold text-dark"
-								aria-current="page"
-								href="#"
-								>HOME</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark" href="#">ABOUT US</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark" href="#">%OFFERS</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark">CONCESSION</a>
-						</li>
-					</ul>
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item">
-							<a class="nav-link text-dark" href="#">GROCERIES</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark" href="#">TOBACCO</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark" href="#">DRINKS</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark">CANDY & GUM</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark">HOME & HEALTH</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark">AUTOMOTIVES</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-dark">STORE USE</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</section>
-		<!-- FIXME banner -->
-		<main class="banner img-fluid">
+					<div class="collapse container navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a
+									class="nav-link active fw-bold text-dark"
+									aria-current="page"
+									href="#"
+									>HOME</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" href="#">ABOUT US</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" href="#">%OFFERS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark">CONCESSION</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link text-dark" href="#">GROCERIES</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" href="#">TOBACCO</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" href="#">DRINKS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark">CANDY & GUM</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark">HOME & HEALTH</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark">AUTOMOTIVES</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark">STORE USE</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</section>
+			<!-- FIXME banner -->
+
 			<div class="container">
 				<div
 					class="row banner-text align-items-center mt-5 pt-lg-5 mt-md-0 col-md-8"
@@ -592,8 +603,8 @@
 					});
 			});
 		</script>
-		<script src="./assets/js/jquery.min.js"></script>
-		<script src="./assets/js/owl.carousel.min.js"></script>
+		<!-- <script src="./assets/js/jquery.min.js"></script> -->
+		<!-- <script src="./assets/js/owl.carousel.min.js"></script> -->
 		<script src="./assets/js/bootstrap.min.js"></script>
 	</body>
 </html>
