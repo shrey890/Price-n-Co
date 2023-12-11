@@ -17,7 +17,10 @@
 .banner {
 	background: url("/assets/img/banner-img.svg");
 	background-size: cover;
-
+	height: 100vh;
+}
+.banner-text {
+	padding-top: 20% !important;
 }
 /* nav{
 	background-color: #F2F2F2;
@@ -90,7 +93,6 @@ p.img-title {
 	font-size: 32px;
 	font-style: normal;
 	font-weight: 600;
-	line-height: 110%;
 }
 main.primary-bg {
 	background: #3f72af;
@@ -99,12 +101,10 @@ main.primary-bg {
 /* .cards {
 	/* overflow-x: auto; */
 /* }  */
-.contentImg{
-	margin-top: -70px;
-	margin-left: -31px;
-	/* justify-content: center; */
-	/* display: block; */
-	
+.contentImg {
+	margin-top: -90px;
+	margin-right: 321px;
+	/* padding: 48px 0px 0px 48px; */
 }
 /* ANCHOR offers & deals */
 div .offer {
@@ -133,6 +133,9 @@ section .ft-text {
 	font-style: normal;
 	font-weight: 400;
 	text-transform: uppercase;
+}
+.back-arrow {
+	z-index: 222;
 }
 .ft-links {
 	color: #fff;
@@ -173,28 +176,33 @@ section .ft-text {
 		font-style: normal;
 		font-weight: 700;
 	}
-	.contentImg{
-		margin-top: -150px;
-		/* margin: 5px; */
-		margin-left: 2px;
-	}
-	.cards {
-		overflow-x: auto;
-	}
-	div .contact{
-		display: none;
-	}
-}
-@media (min-width: 768px){
-	.cards {
-		overflow-x: auto;
-	}
-	.contentImg{
-		margin-top: 40px;
-		/* margin: 5px; */
+	.contentImg {
+		margin-top: -110px;
 		margin-left: -22px;
 	}
-	/* div .contact{
+	.cards {
+		overflow-x: auto;
+	}
+	div .contact {
 		display: none;
-	} */
+	}
+	div .contetntImg {
+		background: url("/assets/img/md-sm-img.png");
+	}
+}
+@media (min-width: 768px) {
+	.cards {
+		overflow-x: auto;
+	}
+	.contentImg {
+		margin-top: 40px;
+		margin-left: -22px;
+	}
+}
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: rgb(0, 0, 0);
+	border-radius: 10px;
 }
