@@ -15,23 +15,24 @@
 	--neutral-white: #fff;
 }
 .banner {
-	background: url("/assets/img/banner-img.svg"),
-		lightgray 0px -81.193px / 104.12% 126.15% no-repeat;
+	background: url("/assets/img/banner-img.svg");
 	background-size: cover;
-	width: 100%;
-	/* height: 660px; */
+
 }
+/* nav{
+	background-color: #F2F2F2;
+} */
 header .primary {
 	background: var(--Primary);
 	display: flex;
 	padding: 3px 48px 4px 48px;
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
+	/* gap: 10px; */
 }
-nav span input.search {
+
+/* input.search {
 	display: flex;
-	width: 500px;
 	padding: 8px 12px;
 	justify-content: space-between !important;
 	align-items: center;
@@ -42,9 +43,15 @@ nav span input.search {
 	font-weight: 400;
 	line-height: 160%;
 	border-radius: 20px;
+	border: 0px solid #eee;
+	background: var(--neutral-white, #fff);
+} */
+/* .search-border {
+
+	border-radius: 20px;
 	border: 1px solid #eee;
 	background: var(--neutral-white, #fff);
-}
+} */
 .main-title {
 	color: #3f72af;
 	font-family: Karla;
@@ -89,8 +96,15 @@ main.primary-bg {
 	background: #3f72af;
 	padding: 48px 0px 0px 48px;
 }
-.cards {
-	overflow-x: auto;
+/* .cards {
+	/* overflow-x: auto; */
+/* }  */
+.contentImg{
+	margin-top: -70px;
+	margin-left: -31px;
+	/* justify-content: center; */
+	/* display: block; */
+	
 }
 /* ANCHOR offers & deals */
 div .offer {
@@ -120,13 +134,13 @@ section .ft-text {
 	font-weight: 400;
 	text-transform: uppercase;
 }
-.ft-links{
-	color: #FFF;
+.ft-links {
+	color: #fff;
 	font-family: Inter;
 	font-size: 12px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 140%; 
+	line-height: 140%;
 	text-decoration: none;
 }
 @media screen and (max-width: 768px) {
@@ -159,4 +173,28 @@ section .ft-text {
 		font-style: normal;
 		font-weight: 700;
 	}
+	.contentImg{
+		margin-top: -150px;
+		/* margin: 5px; */
+		margin-left: 2px;
+	}
+	.cards {
+		overflow-x: auto;
+	}
+	div .contact{
+		display: none;
+	}
+}
+@media (min-width: 768px){
+	.cards {
+		overflow-x: auto;
+	}
+	.contentImg{
+		margin-top: 40px;
+		/* margin: 5px; */
+		margin-left: -22px;
+	}
+	/* div .contact{
+		display: none;
+	} */
 }
