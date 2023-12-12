@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-
 	<link rel="stylesheet" href="./assets/css/style.css" />
 	<!-- !swiper -->
 	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
@@ -36,8 +35,6 @@
 			overflow: hidden;
 		}
 
-
-
 		.search-expanded {
 			width: 200px;
 			/* Expanded width */
@@ -62,87 +59,110 @@
 	</header>
 	<!-- !nav -->
 	<main class="banner img-fluid">
-		<nav class="navbar container navbar-expand-lg bg-body-tertiary banner-nav">
-			<main class="d-flex justify-content-between w-100">
-				<div>
-					<a class="navbar-brand" href="#">
-						<img src="./assets/img/logo.svg" alt="logo" />
-					</a>
-				</div>
-
-				<div class="d-flex search-border justify-content-center search-container" id="searchContainer">
-					<img src="./assets/img/icons/Search.svg" alt="" class="ms-2" />
-					<input type="search" placeholder="Search products, articles, faq, ..." class="search-input" />
-					<img src="./assets/img/icons/mic.svg" alt="" class="me-3" width="24px" />
-					<img src="./assets/img/icons/Camera.svg" alt="" class="me-2" width="24px" />
-				</div>
-				<div class="d-flex   align-items-baseline ml-auto">
-					<div class="navbar-text text-dark a-text me-3  ">
-						<a href="#" class="text-dark"><img src="./assets/img/icons/find-a-store.svg" alt="" />Find a
-							Store</a>
-					</div>
-					<div>
-						<a href="#" class="text-dark"><img src="./assets/img/icons/support.svg" alt="" />Support</a>
-					</div>
-					<div class="ms-5 d-none d-lg-block">
-						<img class="ms-2" src="./assets/img/icons/Favorite.svg" alt="fav" />
-						<img class="ms-2" src="./assets/img/icons/Account.svg" alt="acc" />
-						<img class="ms-2" src="./assets/img/icons/Cart.svg" alt="cart" />
-					</div>
-				</div>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"><img src="./assets/img/icons/Menu.svg" alt="" id="btn-img"></span>
-				</button>
-			</main>
-		</nav>
-		<hr>
-		<section class="navbar-part">
+		<header class="header-section">
 			<div class="container">
-				<nav class="navbar navbar-expand-lg bg-body-tertiary banner-nav">
-					<div class="collapse navbar-collapse " id="navbarNav">
-						<ul class="navbar-nav ">
-							<li class="nav-item">
-								<a class="nav-link active fw-bold text-dark" aria-current="page" href="#">HOME</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#">ABOUT US</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#">%OFFERS</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#">CONCESSION</a>
-							</li>
-						</ul>
-						<ul class="navbar-nav ms-auto">
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#">GROCERIES</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#">TOBACCO</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#">DRINKS</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#">CANDY & GUM</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#">HOME & HEALTH</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#">AUTOMOTIVE</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="#">STORE USE</a>
-							</li>
+				<nav class="navbar navbar-expand-lg">
+					<div class="d-flex align-items-center justify-content-between w-100">
+						<div class="logo-header wow animate__fadeInRight">
+							<a class="navbar-brand" href="#"><img src="./assets/img/logo.svg" alt="logo"></a>
+						</div>
 
-						</ul>
-					</div>
+						<div class="position-relative">
+							<input class="search" type="search" placeholder="Search products, articles, faq, ..."
+								aria-label="Search">
+							<div class="position-absolute">
+								<img class="serc" src="./assets/img/icons/Search.svg" alt="search">
+								<img class="search-record" src="./assets/img/icons/mic.svg" alt="search-record">
+								<img class="search-record" src="./assets/img/icons/Camera.svg" alt="search-record">
+							</div>
+						</div>
+
+						<div class="d-flex">
+							<div class="location">
+								<a href="#"><img src="./assets/img/icons/find-a-store.svg" alt="location"
+										class="me-2">Find
+									a
+									store</a>
+							</div>
+							<div class="support">
+								<a href="#" class="ms-2"><img src="./assets/img/icons/support.svg" alt="support"
+										class="me-2">Support</a>
+							</div>
+							<div class="icons">
+								<div class="d-sm-flex">
+									<a href="#"><img src="./assets/img/icons/Favorite.svg" alt="fav"></a>
+									<a href="#"><img src="./assets/img/icons/Account.svg" alt="profile"></a>
+									<a href="#"><img src="./assets/img/icons/Cart.svg" alt=" cart"></a>
+								</div>
+							</div>
+							<div>
+								<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+									data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+									aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"><img src="./assets/img/icons/Menu.svg"
+											alt=""></span>
+								</button>
+							</div>
+						</div>
 				</nav>
+				<div class="header-bottom borders">
+					<nav class="navbar navbar-expand-lg">
+						<div class="collapse navbar-collapse text-center wow animate__bounceIn" id="navbarNav">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active fw-bold" aria-current="page" href="#">HOME</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">ABOUT US</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">%OFFERS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">CONCESSION</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav ms-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="#">GROCERIES</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">TOBACCO</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">DRINKS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">CANDY & GUM</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">HOME & HEALTH</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">AUTOMOTIVE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">STORE USE</a>
+								</li>
+								<li class="navbar-last-part">
+									<div class="location">
+										<a href="#"><img src="./assets/img/icons/find-a-store.svg" alt="location"
+												class="me-2">Find
+											a
+											store</a>
+									</div>
+									<div class="support">
+										<a href="#" class="ms-2"><img src="./assets/img/icons/support.svg" alt="support"
+												class="me-2">Support</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
 			</div>
-		</section>
+			    
+		</header>
 		<!-- FIXME banner -->
 		<div class="container">
 			<div class="row banner-text align-items-center mt-5 pt-lg-5 mt-md-0 col-md-8">
@@ -166,7 +186,6 @@
 			<p class="small-title">BROWSE POPULAR CATEGORIES</p>
 		</div>
 		<main class="d-flex owl-carousel owl-theme gap-4 justify-content-around  cards">
-
 			<div>
 				<div class="item">
 					<img class="" src="./assets/img/grocery.jpeg" alt="grocery" width="180.24px" height="195px" />
@@ -208,7 +227,6 @@
 				</div>
 				<p class="img-title">HOME & HYGIENE</p>
 			</div>
-
 		</main>
 	</section>
 	<!--TODO Convenient Ordering & Delivery -->
@@ -247,7 +265,6 @@
 			<div class="mt-5">
 				<h5 class="offer">OFFERS & DEALS%</h5>
 			</div>
-
 			<main class="d-flex mt-5 gap-4 owl-carousel owl-theme justify-content-around cards">
 				<div>
 					<div class="item">
@@ -458,7 +475,6 @@
 	<script src="./assets/js/owl.carousel.min.js"></script>
 	<script src="./assets/js/bootstrap.min.js"></script>
 	<script>
-
 		$('.owl-carousel').owlCarousel({
 			slideSpeed: 300,
 			autoplayTimeout: 1000,
@@ -471,28 +487,24 @@
 			stagePadding: 70,
 			responsive: {
 				0: {
-					items: 2,
+					items: 1,
 				},
 				600: {
 					items: 3,
-
 				},
 				1000: {
 					items: 6,
-
 				}
 			}
 		})
 	</script>
 	<!-- !swiper -->
-
 	<!-- !aos -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init();
 	</script>
 	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-
 </body>
 
 </html>
