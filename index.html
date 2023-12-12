@@ -1,162 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="./assets/css/style.css" />
-		<!-- <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" /> -->
-		<!-- <link rel="stylesheet" href="./assets/css/docs.theme.min.css" /> -->
-		<!-- !manifest -->
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="./assets/public/android-chrome-192x192.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./assets/public/favicon-32x32.png"
-		/>
-		<style>
-			.search-container {
-				display: flex;
-				align-items: center;
-			}
 
-			.search-bar {
-				border: 1px solid #ccc;
-				border-radius: 5px;
-				padding: 8px;
-				transition: width 0.3s ease-in-out;
-				width: 40px;
-				/* Initial width */
-				overflow: hidden;
-			}
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <link rel="stylesheet" href="./assets/css/docs.theme.min.css" /> -->
+	<!-- !aos -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
 
-			.search-input {
-				border: none;
-				outline: none;
-				width: 100%;
-			}
+	<link rel="stylesheet" href="./assets/css/style.css" />
+	<!-- !swiper -->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+	<!-- !manifest -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/public/android-chrome-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/public/favicon-32x32.png" />
+	<style>
+		.search-container {
+			display: flex;
+			align-items: center;
+		}
 
-			.search-expanded {
-				width: 200px;
-				/* Expanded width */
-			}
+		img:hover {
+			filter: drop-shadow(3px 2px 3px rgb(0, 0, 0));
+			/* transform: scale(1.5); */
+		}
 
-			.search-icon {
-				position: absolute;
-				left: 8px;
-				/* Adjust the left position as needed */
-				top: 50%;
-				transform: translateY(-50%);
-			}
-		</style>
-		<title>Price & Co.</title>
-	</head>
+		.search-bar {
+			/* border: 21px solid #ff0000; */
+			border-radius: 5px;
+			padding: 8px;
+			transition: width 0.3s ease-in-out;
+			width: 40px;
+			overflow: hidden;
+		}
 
-	<body>
-		<header>
-			<div class="text-center text-white primary">
-				20% Off! Code: SPRING23 - Terms apply*
-			</div>
-		</header>
-		<!-- !nav -->
-		<main class="banner img-fluid">
-			<nav
-				class="navbar container navbar-expand-lg bg-body-tertiary banner-nav"
-			>
-				<main class="d-flex justify-content-between w-100">
+
+
+		.search-expanded {
+			width: 200px;
+			/* Expanded width */
+		}
+
+		.search-icon {
+			position: absolute;
+			left: 8px;
+			/* Adjust the left position as needed */
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	</style>
+	<title>Price & Co.</title>
+</head>
+
+<body>
+	<header>
+		<div class="text-center text-white primary">
+			20% Off! Code: SPRING23 - Terms apply*
+		</div>
+	</header>
+	<!-- !nav -->
+	<main class="banner img-fluid">
+		<nav class="navbar container navbar-expand-lg bg-body-tertiary banner-nav">
+			<main class="d-flex justify-content-between w-100">
+				<div>
+					<a class="navbar-brand" href="#">
+						<img src="./assets/img/logo.svg" alt="logo" />
+					</a>
+				</div>
+
+				<div class="d-flex search-border justify-content-center search-container" id="searchContainer">
+					<img src="./assets/img/icons/Search.svg" alt="" class="ms-2" />
+					<input type="search" placeholder="Search products, articles, faq, ..." class="search-input" />
+					<img src="./assets/img/icons/mic.svg" alt="" class="me-3" width="24px" />
+					<img src="./assets/img/icons/Camera.svg" alt="" class="me-2" width="24px" />
+				</div>
+				<div class="d-flex   align-items-baseline ml-auto">
+					<div class="navbar-text text-dark a-text me-3  ">
+						<a href="#" class="text-dark"><img src="./assets/img/icons/find-a-store.svg" alt="" />Find a
+							Store</a>
+					</div>
 					<div>
-						<a class="navbar-brand" href="#">
-							<img src="./assets/img/logo.svg" alt="logo" />
-						</a>
+						<a href="#" class="text-dark"><img src="./assets/img/icons/support.svg" alt="" />Support</a>
 					</div>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNav"
-						aria-controls="navbarNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"
-							><img src="./assets/img/icons/Menu.svg" alt=""
-						/></span>
-						<span id="closeIcon" style="display: none">&#x2716; ></span>
-					</button>
-					<div
-						class="d-flex search-border justify-content-center search-container"
-						id="searchContainer"
-					>
-						<img src="./assets/img/icons/Search.svg" alt="" class="ms-2" />
-						<input
-							type="search"
-							placeholder="Search products, articles, faq, ..."
-							class="search-input"
-						/>
-						<img
-							src="./assets/img/icons/mic.svg"
-							alt=""
-							class="me-3"
-							width="24px"
-						/>
-						<img
-							src="./assets/img/icons/Camera.svg"
-							alt=""
-							class="me-2"
-							width="24px"
-						/>
+					<div class="ms-5 d-none d-lg-block">
+						<img class="ms-2" src="./assets/img/icons/Favorite.svg" alt="fav" />
+						<img class="ms-2" src="./assets/img/icons/Account.svg" alt="acc" />
+						<img class="ms-2" src="./assets/img/icons/Cart.svg" alt="cart" />
 					</div>
-					<div class="d-flex align-items-baseline">
-						<div class="navbar-text me-3">
-							<a href="#"
-								><img src="./assets/img/icons/find-a-store.svg" alt="" />Find a
-								Store</a
-							>
-						</div>
-
-						<div>
-							<span class="navbar-text"
-								><a href="#"
-									><img src="./assets/img/icons/support.svg" alt="" />Support</a
-								></span
-							>
-						</div>
-						<div class="ms-5">
-							<img
-								class="ms-2"
-								src="./assets/img/icons/Favorite.svg"
-								alt="fav"
-							/>
-							<img
-								class="ms-2"
-								src="./assets/img/icons/Account.svg"
-								alt="acc"
-							/>
-							<img class="ms-2" src="./assets/img/icons/Cart.svg" alt="cart" />
-						</div>
-					</div>
-				</main>
-			</nav>
-			<section>
-				<hr />
+				</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"><img src="./assets/img/icons/Menu.svg" alt="" id="btn-img"></span>
+				</button>
+			</main>
+		</nav>
+		<hr>
+		<section class="navbar-part">
+			<div class="container">
 				<nav class="navbar navbar-expand-lg bg-body-tertiary banner-nav">
-					<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	</button> -->
-					<div class="collapse container navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav">
+					<div class="collapse navbar-collapse " id="navbarNav">
+						<ul class="navbar-nav ">
 							<li class="nav-item">
-								<a
-									class="nav-link active fw-bold text-dark"
-									aria-current="page"
-									href="#"
-									>HOME</a
-								>
+								<a class="nav-link active fw-bold text-dark" aria-current="page" href="#">HOME</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link text-dark" href="#">ABOUT US</a>
@@ -165,7 +112,7 @@
 								<a class="nav-link text-dark" href="#">%OFFERS</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-dark">CONCESSION</a>
+								<a class="nav-link text-dark" href="#">CONCESSION</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav ms-auto">
@@ -179,432 +126,373 @@
 								<a class="nav-link text-dark" href="#">DRINKS</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-dark">CANDY & GUM</a>
+								<a class="nav-link text-dark" href="#">CANDY & GUM</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-dark">HOME & HEALTH</a>
+								<a class="nav-link text-dark" href="#">HOME & HEALTH</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-dark">AUTOMOTIVES</a>
+								<a class="nav-link text-dark" href="#">AUTOMOTIVE</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-dark">STORE USE</a>
+								<a class="nav-link text-dark" href="#">STORE USE</a>
 							</li>
+
 						</ul>
 					</div>
 				</nav>
-			</section>
-			<!-- FIXME banner -->
-
-			<div class="container">
-				<div
-					class="row banner-text align-items-center mt-5 pt-lg-5 mt-md-0 col-md-8"
-				>
-					<div class="">
-						<h3 class="mt-5 main-title">
-							Premier <br />
-							Wholesale <br />
-							Distributor
-						</h3>
-					</div>
-					<div>
-						<p class="p-title fw-bold">Delivering Excellence Since 1929</p>
-					</div>
+			</div>
+		</section>
+		<!-- FIXME banner -->
+		<div class="container">
+			<div class="row banner-text align-items-center mt-5 pt-lg-5 mt-md-0 col-md-8">
+				<div class="">
+					<h3 class="mt-5 tracking-in-expand main-title">
+						Premier <br />
+						Wholesale <br />
+						Distributor
+					</h3>
 				</div>
+				<div>
+					<p class="p-title fw-bold">Delivering Excellence Since 1929</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!--ANCHOR !BROWSE POPULAR CATEGORIES -->
+	<section data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+		class="container mt-5 mt-sm-0 mt-lg-5 mt-md-0">
+		<div>
+			<p class="small-title">BROWSE POPULAR CATEGORIES</p>
+		</div>
+		<main class="d-flex owl-carousel owl-theme gap-4 justify-content-around  cards">
+
+			<div>
+				<div class="item">
+					<img class="" src="./assets/img/grocery.jpeg" alt="grocery" width="180.24px" height="195px" />
+				</div>
+				<p class="img-title">GROCERIES</p>
+			</div>
+			<div>
+				<div>
+					<img class="rotate-in-center" src="./assets/img/drinks.svg" alt="grocery" width="180.24px"
+						height="195px" />
+				</div>
+				<p class="img-title ">Drinks</p>
+			</div>
+			<div>
+				<div>
+					<img class="rotate-in-center" src="./assets/img/HomeN.svg" alt="grocery" width="180.24px"
+						height="195px" />
+				</div>
+				<p class="img-title">HOME & HYGIENE</p>
+			</div>
+			<div>
+				<div>
+					<img class="rotate-in-center" src="./assets/img/HomeN.svg" alt="grocery" width="180.24px"
+						height="195px" />
+				</div>
+				<p class="img-title">HOME & HYGIENE</p>
+			</div>
+			<div>
+				<div>
+					<img class="rotate-in-center" src="./assets/img/HomeN.svg" alt="grocery" width="180.24px"
+						height="195px" />
+				</div>
+				<p class="img-title">HOME & HYGIENE</p>
+			</div>
+			<div>
+				<div>
+					<img class="rotate-in-center" src="./assets/img/HomeN.svg" alt="grocery" width="180.24px"
+						height="195px" />
+				</div>
+				<p class="img-title">HOME & HYGIENE</p>
+			</div>
+
+		</main>
+	</section>
+	<!--TODO Convenient Ordering & Delivery -->
+	<section data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+		class="d-flex container-fluid">
+		<div class="row third-bg pb-5">
+			<main class="col-md-6 col-sm-12 primary-bg">
+				<div class=" ">
+					<p class="p-primary-title text-white">
+						Convenient Ordering & Delivery
+					</p>
+				</div>
+				<div class="col-md-8 pt-3">
+					<p class="text-white lead">
+						We value your time, and our convenient ordering options reflect
+						that. Place your orders effortlessly through our user-friendly
+						online platform or enjoy the flexibility of mobile ordering
+						through mobile allowing you to order on the go, anytime, anywhere.
+					</p>
+				</div>
+				<div class="col-md-4 pb-5">
+					<img src="./assets/img/white-arrow.png" class="back-arrow " alt="" />
+				</div>
+			</main>
+			<main class="col-md-4 col-sm-12 mt-5 pt-5">
+				<div>
+					<img class="img-fluid contentImg slide-in-elliptic-top-fwd" src="./assets/img/banner-img-2.png"
+						alt="img" />
+				</div>
+			</main>
+		</div>
+	</section>
+	<!--ANCHOR   OFFERS & DEALS%-->
+	<section class="container">
+		<main data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+			<div class="mt-5">
+				<h5 class="offer">OFFERS & DEALS%</h5>
+			</div>
+
+			<main class="d-flex mt-5 gap-4 owl-carousel owl-theme justify-content-around cards">
+				<div>
+					<div class="item">
+						<img src="./assets/img/climato.svg" alt="grocery" width="187px" height="187px" />
+						<small class="text-muted">DRINKS</small>
+					</div>
+					<p class="img-title">
+						DRINKS CLAMATO PICANTE JUICE 12/16 OZ $2.85 5,00 (45)
+					</p>
+					<p>
+						<span class="fw-bold"> $2.85 </span>
+						<span class="text-muted ms-3">
+							<del>5,00 </del>
+						</span>
+					</p>
+				</div>
+				<div class="item">
+					<div>
+						<img src="./assets/img/climato.svg" alt="grocery" width="187px" height="187px" />
+						<small class="text-muted">DRINKS</small>
+					</div>
+					<p class="img-title">
+						DRINKS CLAMATO PICANTE JUICE 12/16 OZ $2.85 5,00 (45)
+					</p>
+					<p>
+						<span class="fw-bold"> $2.85 </span>
+						<span class="text-muted ms-3">
+							<del>5,00 </del>
+						</span>
+					</p>
+				</div>
+				<div class="item">
+					<div>
+						<img src="./assets/img/climato.svg" alt="grocery" width="187px" height="187px" />
+						<small class="text-muted">DRINKS</small>
+					</div>
+					<p class="img-title">
+						DRINKS CLAMATO PICANTE JUICE 12/16 OZ $2.85 5,00 (45)
+					</p>
+					<p>
+						<span class="fw-bold"> $2.85 </span>
+						<span class="text-muted ms-3">
+							<del>5,00 </del>
+						</span>
+					</p>
+				</div>
+				<div class="item">
+					<div>
+						<img src="./assets/img/climato.svg" alt="grocery" width="187px" height="187px" />
+						<small class="text-muted">DRINKS</small>
+					</div>
+					<p class="img-title">
+						DRINKS CLAMATO PICANTE JUICE 12/16 OZ $2.85 5,00 (45)
+					</p>
+					<p>
+						<span class="fw-bold"> $2.85 </span>
+						<span class="text-muted ms-3">
+							<del>5,00 </del>
+						</span>
+					</p>
+				</div>
+				<div class="item">
+					<div>
+						<img src="./assets/img/climato.svg" alt="grocery" width="187px" height="187px" />
+						<small class="text-muted">DRINKS</small>
+					</div>
+					<p class="img-title">
+						DRINKS CLAMATO PICANTE JUICE 12/16 OZ $2.85 5,00 (45)
+					</p>
+					<p>
+						<span class="fw-bold"> $2.85 </span>
+						<span class="text-muted ms-3">
+							<del>5,00 </del>
+						</span>
+					</p>
+				</div>
+				<div class="item">
+					<div>
+						<img src="./assets/img/climato.svg" alt="grocery" width="187px" height="187px" />
+						<small class="text-muted">DRINKS</small>
+					</div>
+					<p class="img-title">
+						DRINKS CLAMATO PICANTE JUICE 12/16 OZ $2.85 5,00 (45)
+					</p>
+					<p>
+						<span class="fw-bold"> $2.85 </span>
+						<span class="text-muted ms-3">
+							<del>5,00 </del>
+						</span>
+					</p>
+				</div>
+			</main>
+			<div class="mt-5 container">
+				<img src="./assets/img/arrow.png" class="back-arrow" alt="" />
 			</div>
 		</main>
-		<!--ANCHOR !BROWSE POPULAR CATEGORIES -->
-		<section class="container-fluid mt-5 mt-sm-0 mt-lg-5 mt-md-0">
-			<div>
-				<p class="small-title">BROWSE POPULAR CATEGORIES</p>
+	</section>
+	<!-- !footer -->
+	<footer class="mt-3">
+		<main>
+			<div class="text-center red-line text-white">
+				*** CIGARETTE SMOKING IS HAZARDOUS TO YOUR HEALTH.CIGARETTES ARE NOT
+				SOLD ONLINE TO THE GENERAL PUBLIC. ***
 			</div>
-			<main class="d-flex gap-4 justify-content-around cards">
-				<div>
-					<div>
-						<img
-							src="./assets/img/grocery.jpeg"
-							alt="grocery"
-							width="180.24px"
-							height="195px"
-						/>
+		</main>
+		<!-- Footer -->
+		<main class="text-white footer-bg text-center">
+			<!-- Grid container -->
+			<div class="container-fluid p-5 text-white">
+				<!-- Section: Links -->
+				<section class="ft-text">
+					<!--Grid row-->
+					<div class="row d-flex justify-content-between align-items-center">
+						<!--Grid column-->
+						<div class="col-lg-2 justify-content-md-start col-md-3 col-sm-12 mb-4 mb-md-0">
+							<img src="./assets/img/footer-logo.png" alt="ft-logo" />
+						</div>
+						<!--Grid column-->
+						<!--Grid column-->
+						<div class="col-lg-2 contact d-none d-lg-block col-md-2 mb-4 mb-md-0">
+							<h5 class="ft-title">CONTACT</h5>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#!" class="ft-links">info@priceco.com</a>
+								</li>
+								<li>
+									<a href="#!" class="ft-links">Phone </a>
+								</li>
+								<li>
+									<a href="#!" class="ft-links">Other Info</a>
+								</li>
+							</ul>
+						</div>
+						<!--Grid column-->
+						<!--Grid column-->
+						<div class="col-lg-2 col-md-2 col-sm-6 col-6 mb-4 mb-md-0">
+							<h5 class="ft-title">CATEGORY</h5>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#!" class="ft-links">Tobacco</a>
+								</li>
+								<li>
+									<a href="#!" class="ft-links">Grocery</a>
+								</li>
+								<li>
+									<a href="#!" class="ft-links">Drinks</a>
+								</li>
+							</ul>
+						</div>
+						<!--Grid column-->
+						<!--Grid column-->
+						<div class="col-lg-2 col-md-2 col-sm-6 col-6 mb-4 mb-md-0">
+							<h5 class="ft-title">CATEGORY</h5>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#!" class="ft-links">Concessions</a>
+								</li>
+								<li>
+									<a href="#!" class="ft-links">Store Use</a>
+								</li>
+								<li>
+									<a href="#!" class="ft-links">Automotive</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-6 col-6 mb-4 mb-md-0">
+							<h5 class="ft-title">OTHER</h5>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#!" class="ft-links">Customer Portal</a>
+								</li>
+								<li>
+									<a href="#!" class="ft-links">Mobile Ordeing</a>
+								</li>
+								<li>
+									<a href="#!" class="ft-links">Support</a>
+								</li>
+							</ul>
+						</div>
+						<!--Grid column-->
+						<!--Grid column-->
+						<div class="col-lg-2 col-md-2 col-sm-6 col-6 mb-4 mb-md-0">
+							<h5 class="ft-title">SALE</h5>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="#!" class="ft-links">10% OFF</a>
+								</li>
+								<li>
+									<a href="#!" class="ft-links">20% OFF</a>
+								</li>
+								<li>
+									<a href="#!" class="ft-links">30% OFF</a>
+								</li>
+							</ul>
+						</div>
+						<!--Grid column-->
 					</div>
-					<p class="img-title">GROCERIES</p>
-				</div>
-				<div>
-					<div>
-						<img
-							src="./assets/img/drinks.svg"
-							alt="grocery"
-							width="180.24px"
-							height="195px"
-						/>
-					</div>
-					<p class="img-title">GROCERIES</p>
-				</div>
-				<div>
-					<div>
-						<img
-							src="./assets/img/drinks.svg"
-							alt="grocery"
-							width="180.24px"
-							height="195px"
-						/>
-					</div>
-					<p class="img-title">GROCERIES</p>
-				</div>
-				<div>
-					<div>
-						<img
-							src="./assets/img/grocery.jpeg"
-							alt="grocery"
-							width="180.24px"
-							height="195px"
-						/>
-					</div>
-					<p class="img-title">GROCERIES</p>
-				</div>
-				<div>
-					<div>
-						<img
-							src="./assets/img/grocery.jpeg"
-							alt="grocery"
-							width="180.24px"
-							height="195px"
-						/>
-					</div>
-					<p class="img-title">GROCERIES</p>
-				</div>
-				<div>
-					<div>
-						<img
-							src="./assets/img/grocery.jpeg"
-							alt="grocery"
-							width="180.24px"
-							height="195px"
-						/>
-					</div>
-					<p class="img-title">GROCERIES</p>
-				</div>
-				<div>
-					<div>
-						<img
-							src="./assets/img/grocery.jpeg"
-							alt="grocery"
-							width="180.24px"
-							height="195px"
-						/>
-					</div>
-					<p class="img-title">GROCERIES</p>
-				</div>
-				<div>
-					<div>
-						<img
-							src="./assets/img/grocery.jpeg"
-							alt="grocery"
-							width="180.24px"
-							height="195px"
-						/>
-					</div>
-					<p class="img-title">GROCERIES</p>
-				</div>
-				<div>
-					<div>
-						<img
-							src="./assets/img/grocery.jpeg"
-							alt="grocery"
-							width="180.24px"
-							height="195px"
-						/>
-					</div>
-					<p class="img-title">GROCERIES</p>
-				</div>
-			</main>
-		</section>
-		<!--TODO Convenient Ordering & Delivery -->
-		<section class="d-flex container-fluid">
-			<div class="row">
-				<main class="col-md-6 col-sm-12 primary-bg mt-5">
-					<div class=" ">
-						<p class="p-primary-title pt-5 text-white">
-							Convenient Ordering & Delivery
-						</p>
-					</div>
-					<div class="col-md-8 pt-3">
-						<p class="text-white lead">
-							We value your time, and our convenient ordering options reflect
-							that. Place your orders effortlessly through our user-friendly
-							online platform or enjoy the flexibility of mobile ordering
-							through mobile allowing you to order on the go, anytime, anywhere.
-						</p>
-					</div>
-					<div class="col-md-4">
-						<img src="./assets/img/white-arrow.png" class="back-arrow" alt="" />
-					</div>
-				</main>
-				<main class="col-md-4 col-sm-12 mt-5 pt-5">
-					<div>
-						<img
-							class="img-fluid contentImg"
-							src="./assets/img/banner-img-2.png"
-							alt="img"
-						/>
-					</div>
-				</main>
+					<!--Grid row-->
+				</section>
+				<!-- Section: Links -->
 			</div>
-		</section>
-		<!--ANCHOR   OFFERS & DEALS%-->
-		<section class="container-fluid">
-			<main>
-				<div class="mt-5">
-					<h5 class="offer">OFFERS & DEALS%</h5>
-				</div>
-				<main class="d-flex mt-5 gap-4 justify-content-around cards">
-					<div class="item">
-						<div>
-							<img
-								src="./assets/img/climato.svg"
-								alt="grocery"
-								width="187px"
-								height="187px"
-							/>
-						</div>
-						<p class="img-title">GROCERIES</p>
-					</div>
-					<div class="item">
-						<div>
-							<img
-								src="./assets/img/climato.svg"
-								alt="grocery"
-								width="187px"
-								height="187px"
-							/>
-						</div>
-						<p class="img-title">GROCERIES</p>
-					</div>
-					<div class="item">
-						<div>
-							<img
-								src="./assets/img/climato.svg"
-								alt="grocery"
-								width="187px"
-								height="187px"
-							/>
-						</div>
-						<p class="img-title">GROCERIES</p>
-					</div>
-					<div class="item">
-						<div>
-							<img
-								src="./assets/img/climato.svg"
-								alt="grocery"
-								width="187px"
-								height="187px"
-							/>
-						</div>
-						<p class="img-title">GROCERIES</p>
-					</div>
-					<div class="item">
-						<div>
-							<img
-								src="./assets/img/climato.svg"
-								alt="grocery"
-								width="187px"
-								height="187px"
-							/>
-						</div>
-						<p class="img-title">GROCERIES</p>
-					</div>
-					<div class="item">
-						<div>
-							<img
-								src="./assets/img/climato.svg"
-								alt="grocery"
-								width="187px"
-								height="187px"
-							/>
-						</div>
-						<p class="img-title">GROCERIES</p>
-					</div>
-					<div class="item">
-						<div>
-							<img
-								src="./assets/img/climato.svg"
-								alt="grocery"
-								width="187px"
-								height="187px"
-							/>
-						</div>
-						<p class="img-title">GROCERIES</p>
-					</div>
-					<div class="item">
-						<div>
-							<img
-								src="./assets/img/climato.svg"
-								alt="grocery"
-								width="187px"
-								height="187px"
-							/>
-						</div>
-						<p class="img-title">GROCERIES</p>
-					</div>
-					<div class="item">
-						<div>
-							<img
-								src="./assets/img/climato.svg"
-								alt="grocery"
-								width="187px"
-								height="187px"
-							/>
-						</div>
-						<p class="img-title">GROCERIES</p>
-					</div>
-				</main>
-				<div class="mt-5 container-fluid">
-					<img src="./assets/img/arrow.png" class="back-arrow" alt="" />
-				</div>
-			</main>
-		</section>
-		<!-- !footer -->
-		<footer class="mt-3">
-			<main>
-				<div class="text-center red-line text-white">
-					*** CIGARETTE SMOKING IS HAZARDOUS TO YOUR HEALTH.CIGARETTES ARE NOT
-					SOLD ONLINE TO THE GENERAL PUBLIC. ***
-				</div>
-			</main>
-			<!-- Footer -->
-			<main class="text-white footer-bg text-center">
-				<!-- Grid container -->
-				<div class="container-fluid p-5 text-white">
-					<!-- Section: Links -->
-					<section class="ft-text">
-						<!--Grid row-->
-						<div class="row d-flex justify-content-around">
-							<!--Grid column-->
-							<div
-								class="col-lg-2 justify-content-md-start col-md-2 col-sm-12 mb-4 mb-md-0"
-							>
-								<img src="./assets/img/footer-logo.png" alt="ft-logo" />
-							</div>
-							<!--Grid column-->
-							<!--Grid column-->
-							<div
-								class="col-lg-2 contact d-none d-lg-block col-md-2 mb-4 mb-md-0"
-							>
-								<h5 class="ft-title">CONTACT</h5>
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="#!" class="ft-links">info@priceco.com</a>
-									</li>
-									<li>
-										<a href="#!" class="ft-links">Phone </a>
-									</li>
-									<li>
-										<a href="#!" class="ft-links">Other Info</a>
-									</li>
-								</ul>
-							</div>
-							<!--Grid column-->
-							<!--Grid column-->
-							<div class="col-lg-2 col-md-2 col-sm-6 col-6 mb-4 mb-md-0">
-								<h5 class="ft-title">CATEGORY</h5>
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="#!" class="ft-links">Tobacco</a>
-									</li>
-									<li>
-										<a href="#!" class="ft-links">Grocery</a>
-									</li>
-									<li>
-										<a href="#!" class="ft-links">Drinks</a>
-									</li>
-								</ul>
-							</div>
-							<!--Grid column-->
-							<!--Grid column-->
-							<div class="col-lg-2 col-md-2 col-sm-6 col-6 mb-4 mb-md-0">
-								<h5 class="ft-title">CATEGORY</h5>
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="#!" class="ft-links">Concessions</a>
-									</li>
-									<li>
-										<a href="#!" class="ft-links">Store Use</a>
-									</li>
-									<li>
-										<a href="#!" class="ft-links">Automotive</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-6 col-6 mb-4 mb-md-0">
-								<h5 class="ft-title">OTHER</h5>
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="#!" class="ft-links">Customer Portal</a>
-									</li>
-									<li>
-										<a href="#!" class="ft-links">Mobile Ordeing</a>
-									</li>
-									<li>
-										<a href="#!" class="ft-links">Support</a>
-									</li>
-								</ul>
-							</div>
-							<!--Grid column-->
-							<!--Grid column-->
-							<div class="col-lg-2 col-md-2 col-sm-6 col-6 mb-4 mb-md-0">
-								<h5 class="ft-title">SALE</h5>
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="#!" class="ft-links">10% OFF</a>
-									</li>
-									<li>
-										<a href="#!" class="ft-links">20% OFF</a>
-									</li>
-									<li>
-										<a href="#!" class="ft-links">30% OFF</a>
-									</li>
-								</ul>
-							</div>
-							<!--Grid column-->
-						</div>
-						<!--Grid row-->
-					</section>
-					<!-- Section: Links -->
-				</div>
-				<!-- Grid container -->
-			</main>
-			<!-- Footer -->
-		</footer>
-		<!-- !JS -->
-		<script>
-			const searchContainer = document.getElementById("searchContainer");
-			const searchBar = document.getElementById("searchBar");
-			const searchInput = document.querySelector(".search-input");
-			searchContainer.addEventListener("click", function () {
-				searchBar.classList.toggle("search-expanded");
-				if (searchBar.classList.contains("search-expanded")) {
-					searchInput.focus();
-				} else {
-					searchInput.blur();
+			<!-- Grid container -->
+		</main>
+		<!-- Footer -->
+	</footer>
+	<!-- !JS -->
+	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/owl.carousel.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script>
+
+		$('.owl-carousel').owlCarousel({
+			slideSpeed: 300,
+			autoplayTimeout: 1000,
+			loop: true,
+			margin: 4,
+			nav: true,
+			autoplay: true,
+			autoplayHoverPause: true,
+			lazyLoad: true,
+			stagePadding: 70,
+			responsive: {
+				0: {
+					items: 2,
+				},
+				600: {
+					items: 3,
+
+				},
+				1000: {
+					items: 6,
+
 				}
-			});
-			// close icon nav
-			document.addEventListener("DOMContentLoaded", function () {
-				const menuIcon = document.getElementById("menuIcon");
-				const closeIcon = document.getElementById("closeIcon");
-				document
-					.querySelector(".navbar-toggler")
-					.addEventListener("click", function () {
-						menuIcon.style.display =
-							menuIcon.style.display === "none" ? "inline-block" : "none";
-						closeIcon.style.display =
-							closeIcon.style.display === "none" ? "inline-block" : "none";
-					});
-			});
-		</script>
-		<!-- <script src="./assets/js/jquery.min.js"></script> -->
-		<!-- <script src="./assets/js/owl.carousel.min.js"></script> -->
-		<script src="./assets/js/bootstrap.min.js"></script>
-	</body>
+			}
+		})
+	</script>
+	<!-- !swiper -->
+
+	<!-- !aos -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+</body>
+
 </html>
